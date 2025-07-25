@@ -17,3 +17,14 @@ flight = Flight(32)
 print(flight.capacity)
 
 print(flight.passengers)
+
+
+person = ["John", "Jane", "Doe"]
+
+for p in person:
+    success = flight.add_passenger(p)
+    if success == True:
+        print(f"Added {p} to the flight")
+    else:
+        print(f"Could not add {p} to the flight due to overcpacity ")
+
