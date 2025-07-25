@@ -1,11 +1,19 @@
-import functions
+class Flight():
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.passengers = []
+    
+    def add_passenger(self, name):
+        if self.capacity == 0:
+            print("Flight is full")
+        else:
+            self.passengers.append(name)
+    
+    def number_seats(self):
+        return self.capacity - len(self.passengers)
 
-x = 4
+flight = Flight(32)
 
+print(flight.capacity)
 
-print(functions.sqrt(x))
-
-
-
-class Point():
-    def __init__(self, )
+print(flight.passengers)
