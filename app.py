@@ -28,3 +28,13 @@ for p in person:
     else:
         print(f"Could not add {p} to the flight due to overcpacity ")
 
+def announce(f):
+    def wrapper():
+        print("About to run the function...")
+        f()
+        print("Function has been run correctly...")
+        return wrapper
+@announce
+def hello():
+    print("Hello, world")
+
