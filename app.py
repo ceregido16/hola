@@ -38,3 +38,20 @@ def announce(f):
 def hello():
     print("Hello, world")
 
+
+import sys
+
+try:
+    x = int(input("Enter a number: "))
+    y = int(input("Enter another number: "))
+except ValueError:
+    print("Invalid input, please try again with a valid number....")
+    sys.exit(1)
+    
+try:
+    print(f"The result of dividing {x} by {y} is {x / y}")
+except ZeroDivisionError:
+    print("This operation can't be solved (Undefined)")
+    sys.exit(1)
+    #In this case, we exit the program if a division by zero is attempted.
+
