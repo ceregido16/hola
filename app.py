@@ -33,7 +33,7 @@ def announce(f):
         print("About to run the function...")
         f()
         print("Function has been run correctly...")
-        return wrapper
+    return wrapper
 @announce
 def hello():
     print("Hello, world")
@@ -47,7 +47,7 @@ try:
 except ValueError:
     print("Invalid input, please try again with a valid number....")
     sys.exit(1)
-    
+
 try:
     print(f"The result of dividing {x} by {y} is {x / y}")
 except ZeroDivisionError:
