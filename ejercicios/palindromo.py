@@ -1,4 +1,5 @@
 word = input("Enter any word you want and then I will tell you if it is a palindrome or not: ")
+word = word.lower()
 list = []
 
 for i in word:

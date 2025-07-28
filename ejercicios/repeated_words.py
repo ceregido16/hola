@@ -11,5 +11,3 @@ for word in sentence:
 
 for word in dict:
     print(f"The word {word} appears {dict[word]} times.")
-
-print(dict)

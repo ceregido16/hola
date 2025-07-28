@@ -1,3 +1,7 @@
+from time import time
+
+
+
 def announcement(f):
     def wrapper():
         print("Initialazing the function...")
